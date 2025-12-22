@@ -1,3 +1,5 @@
+import Footer from "@/components/layout/Footer/Footer";
+import Navbar from "@/components/layout/Navbar/Navbar";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -34,9 +36,13 @@ export default function RootLayout({
   return (
     <html lang="ar" dir="rtl" className={janna.variable}>
       <body
-        className={` antialiased`}
+        className={``}
       >
-        {children}
+        <Navbar />
+        <div className="h-screen bg-bg">
+          {children}
+        </div>
+        <Footer />
       </body>
     </html>
   );
