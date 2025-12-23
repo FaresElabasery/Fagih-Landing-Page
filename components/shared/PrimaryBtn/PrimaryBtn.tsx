@@ -5,11 +5,11 @@ import Link from "next/link";
 type PrimaryBtn ={
     title: string,
     to?: string,
-    classname?: string,
+    variant?: true,
 }
-export default function PrimaryBtn({ title, to = '#', classname }: PrimaryBtn) {
+export default function PrimaryBtn({ title, to = '#', variant }: PrimaryBtn) {
     return (
-        <Button asChild className={`primary-btn mt-4 ${classname}`}>
+        <Button asChild className={`${variant? `primary-btn` : 'secondary-btn'}`}>
             <Link href={`#${to}`}>
                 {title} <ChevronsLeft />
             </Link>

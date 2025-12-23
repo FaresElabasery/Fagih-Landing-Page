@@ -26,13 +26,13 @@ import { Menu } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 
 export default function Navbar() {
     const [isOpenNav, setisOpenNav] = useState(false)
     const pathname = usePathname()
-    console.log(pathname);
+    const [isScrolled, setIsScrolled] = useState(false)
 
     const handleCloseMenu = () => {
         setisOpenNav(false)
@@ -48,8 +48,16 @@ export default function Navbar() {
         { title: "شاطئ الشقيق", link: "/projects/shoqaiq" },
         { title: "الكورنيش الجنوبي", link: "/projects/corniche" },
     ]
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 200)
+        }
+        window.addEventListener("scroll",handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
+    }, [])
+
     return (
-        <header className={`z-30 text-text1 bg-transparent  w-full fixed top-0  backdrop-blur-xs py-4`}>
+        <header className={`z-30 text-text1 bg-transparent ${isScrolled ? 'bg-black/40!' : ''} duration-500 w-full fixed top-0  backdrop-blur-xs py-4`}>
             <div className='mx-auto px-4 sm:px-2 lg:px-15'>
                 <div className='flex items-center gap-2 justify-between h-18'>
                     {/* Brand */}
@@ -69,7 +77,7 @@ export default function Navbar() {
 
                         <Link
                             href="#who-we-are"
-                            className={`navbarLink text-[clamp(12px,1.5vw,20px)] text-nowrap ${pathname === "/who-we-are" ? "active" : ""}`}
+                            className={`navbarLink text-[clamp(12px,1.5vw,20px)] text-nowrap ${pathname === "#who-we-are" ? "active" : ""}`}
                         >
                             من نحن
                         </Link>
@@ -77,7 +85,7 @@ export default function Navbar() {
                         <NavigationMenu>
                             <NavigationMenuList>
                                 <NavigationMenuItem className=''>
-                                    <NavigationMenuTrigger className="navbarLink flex flex-row-reverse gap-2 hover:bg-transparent! hover:text-white! text-[clamp(12px,1.5vw,20px)] text-nowrap bg-transparent px-0">
+                                    <NavigationMenuTrigger className="navbarLink flex flex-row-reverse gap-2 hover:bg-transparent! hover:text-text1! text-[clamp(12px,1.5vw,20px)] text-nowrap bg-transparent px-0">
                                         خدماتنا
                                     </NavigationMenuTrigger>
 
@@ -104,7 +112,7 @@ export default function Navbar() {
                         <NavigationMenu>
                             <NavigationMenuList>
                                 <NavigationMenuItem>
-                                    <NavigationMenuTrigger className="navbarLink flex flex-row-reverse gap-2 hover:bg-transparent! hover:text-white! text-[clamp(12px,1.5vw,20px)] text-nowrap bg-transparent px-0">
+                                    <NavigationMenuTrigger className="navbarLink flex flex-row-reverse gap-2 hover:bg-transparent! hover:text-text1! text-[clamp(12px,1.5vw,20px)] text-nowrap bg-transparent px-0">
                                         مشاريعنا
                                     </NavigationMenuTrigger>
 
@@ -135,7 +143,7 @@ export default function Navbar() {
 
                     {/* actions btns in desktop */}
                     <div className='hidden md:flex items-center gap-4 border px-8 rounded-full overflow-hidden'>
-                        <Image src={menu} alt='menu icon' width={30} className='py-4' onClick={()=>setisOpenNav(!isOpenNav)}></Image>
+                        <Image src={menu} alt='menu icon' width={30} className='py-4' onClick={() => setisOpenNav(!isOpenNav)}></Image>
                         <div className='flex items-center sm:gap-2 lg:gap-4 border-r pr-4 max-lg:hidden'>
                             <div className='hover:scale-110 duration-200'>
                                 <Image src={search} alt='search icon' width={30} className='py-4 cursor-pointer'></Image>

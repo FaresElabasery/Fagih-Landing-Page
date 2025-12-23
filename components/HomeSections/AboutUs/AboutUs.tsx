@@ -16,12 +16,12 @@ export default function AboutUs() {
                         <Badge >
                             معلومات عنا
                         </Badge>
-                        <h2 className="text-4xl my-4 font-bold">عن شركة
+                        <h2 className="text-4xl my-4 font-bold ">عن شركة
                             حسن فقيه للاستشارات الهندسية</h2>
-                        <p className="leading-8">
+                        <p className="leading-8 mb-4">
                             متخصصة في تقديم الخدمات الفنية والهندسية للمشاريع والبنى التحتية منذ عام 2010. نعمل على توفير حلول مبتكرة تضمن نجاح المشاريع وتلبي احتياجات عملائنا من الجهات الحكومية والخاصة بكفاءة واحترافية، بدعم من فريق متمرس يستخدم أحدث التقنيات ويطبق أعلى المعايير العالمية.
                         </p>
-                        <PrimaryBtn title="شاهد المزيد" to="/" classname="bg-text! text-bg!" />
+                        <PrimaryBtn title="شاهد المزيد" to="/"  />
                     </div>
                     <div className=" w-full md:w-1/2 lg:ps-20 my-10">
                         <SwipPhoto />

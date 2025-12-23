@@ -155,11 +155,12 @@
     @apply flex items-center justify-center;
   }
   .primary-btn{
-    @apply flex items-center justify-center bg-bg2 text-text font-bold w-full cursor-pointer sm:w-50 hover:bg-text hover:text-bg2 duration-300;
+    @apply flex items-center justify-center bg-bg2 text-text font-bold w-full cursor-pointer sm:w-50 hover:bg-text hover:text-bg2 duration-300 shadow-2xl;
   }
-  .section-padding{
-    @apply py-10 lg:py-20;
+  .secondary-btn{
+    @apply flex items-center justify-center bg-text text-bg2 font-bold w-full cursor-pointer sm:w-50 hover:bg-bg2 hover:text-text duration-300 shadow-2xl;
   }
+  
 }
 
 /* navbar active links  */

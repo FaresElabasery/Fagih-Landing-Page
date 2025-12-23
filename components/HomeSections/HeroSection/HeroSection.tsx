@@ -21,7 +21,7 @@ export default function HeroSection() {
                             <p className="text-text1 text-lg lg:text-xl mt-4 leading-8">
                                 نقدم في مكتب حسن محمد فقيه للاستشارات الهندسية مجموعة متكاملة من الخدمات الهندسية تشمل التصميم المعماري، الإشراف الهندسي، وإدارة المشاريع، مع التزام كامل بتطبيق أعلى معايير الجودة والابتكار. نعمل على تنفيذ المشاريع في منطقة الباحة وخارجها بكفاءة عالية، ونسعى دائمًا إلى تقديم حلول مخصصة تلبي تطلعات عملائنا وتسهم في تحسين البنية التحتية وتحقيق التنمية المستدامة.
                             </p>
-                            <PrimaryBtn to='who-we-are' title='من نحن' />
+                            <PrimaryBtn to='who-we-are' title='من نحن' variant={true} />
                         </div>
                         <div className="w-full flex flex-col items-end md:flex-row md:py-4 lg:flex-col lg:py-0 lg:w-1/3 ">
                             <Image src={hero1} alt=' Building 1' className='mb-10 w-full sm:w-fit bg-cover' />
