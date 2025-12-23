@@ -49,7 +49,7 @@ export default function Navbar() {
         { title: "الكورنيش الجنوبي", link: "/projects/corniche" },
     ]
     return (
-        <header className={`z-30 text-text1 bg-transparent  w-full sticky top-0  backdrop-blur-2xl py-4`}>
+        <header className={`z-30 text-text1 bg-transparent  w-full fixed top-0  backdrop-blur-xs py-4`}>
             <div className='mx-auto px-4 sm:px-2 lg:px-15'>
                 <div className='flex items-center gap-2 justify-between h-18'>
                     {/* Brand */}
@@ -135,8 +135,8 @@ export default function Navbar() {
 
                     {/* actions btns in desktop */}
                     <div className='hidden md:flex items-center gap-4 border px-8 rounded-full overflow-hidden'>
-                        <Image src={menu} alt='menu icon' width={30} className='py-4'></Image>
-                        <div className='flex items-center sm:gap-2 lg:gap-4 border-r pr-4 '>
+                        <Image src={menu} alt='menu icon' width={30} className='py-4' onClick={()=>setisOpenNav(!isOpenNav)}></Image>
+                        <div className='flex items-center sm:gap-2 lg:gap-4 border-r pr-4 max-lg:hidden'>
                             <div className='hover:scale-110 duration-200'>
                                 <Image src={search} alt='search icon' width={30} className='py-4 cursor-pointer'></Image>
                             </div>

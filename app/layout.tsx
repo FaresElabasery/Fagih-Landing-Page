@@ -39,7 +39,7 @@ export default function RootLayout({
         className={``}
       >
         <Navbar />
-        <div className="h-screen bg-bg">
+        <div className="bg-bg">
           {children}
         </div>
         <Footer />
