@@ -57,7 +57,7 @@ export default function Navbar() {
     }, [])
 
     return (
-        <header className={`z-30 text-text1 bg-transparent ${isScrolled ? 'bg-black/40!' : ''} duration-500 w-full fixed top-0  backdrop-blur-xs py-4`}>
+        <header className={`z-30 text-text1 bg-black/40   ${!isScrolled ? 'bg-transparent!' : 'backdrop-blur-2xl'} duration-500 w-full fixed top-0   py-4`}>
             <div className='mx-auto px-4 sm:px-2 lg:px-15'>
                 <div className='flex items-center gap-2 justify-between h-18'>
                     {/* Brand */}
