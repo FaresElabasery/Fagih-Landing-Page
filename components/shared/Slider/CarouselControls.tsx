@@ -27,13 +27,13 @@ export default function CarouselControls({ api }: { api: CarouselApi }) {
             <div className="flex w-full justify-between sm:hidden">
                 <button
                     onClick={() => api.scrollPrev()}
-                    className="size-12 rounded-full bg-white flex-center border "
+                    className="size-6 rounded-full bg-text1 flex-center border "
                 >
                     <ArrowRight className="size-5" />
                 </button>
                 <button
                     onClick={() => api.scrollNext()}
-                    className="size-12 rounded-full bg-white flex-center border "
+                    className="size-6 rounded-full bg-text1 flex-center border "
                 >
                     <ArrowLeft className="size-5" />
                 </button>
