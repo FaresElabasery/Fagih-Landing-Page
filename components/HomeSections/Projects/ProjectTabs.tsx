@@ -16,7 +16,7 @@ export default function ProjectsTabs({ activeCity, onChange }: Props) {
                         className={`
                                     py-2 text-text text-sm font-bold! sm:text-2xl cursor-pointer navtabsLink
                                     ${activeCity === city
-                                ? "active hover:font-bold!"
+                                ? "activetab hover:font-bold!"
                                 : " hover:text-text hover:font-bold"}`}
                     >
                         {city === "احدث" ? "احدث المشاريع " : city}

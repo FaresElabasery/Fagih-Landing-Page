@@ -9,7 +9,7 @@ import icon3 from '@images/icons/about-icon3.svg';
 
 export default function AboutUs() {
     return (
-        <section id="who-we-are" className="lg:min-h-screen h-full">
+        <section id="who-we-are">
             <div className="container">
                 <div className="flex flex-wrap items-center">
                     <div className="flex flex-col w-full md:w-1/2 lg:pe-40 pt-4">

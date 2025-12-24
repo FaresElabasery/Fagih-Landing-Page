@@ -42,7 +42,7 @@ export default function Projects() {
             : projects.filter((p) => p.city === activeCity)
 
     return (
-        <section id="projects" className="lg:min-h-screen h-full">
+        <section id="projects">
             <ProjectsTabs
                 activeCity={activeCity}
                 onChange={setActiveCity}
