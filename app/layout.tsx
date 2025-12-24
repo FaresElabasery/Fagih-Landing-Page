@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
     {
-      url: "/og-image.png",
+      url: "https://fagih-landing-page.vercel.app/og-image.png",
       width: 1200,
       height: 630,
       alt: "مكتب حسن محمد فقيه للاستشارات الهندسية",
