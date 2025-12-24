@@ -146,7 +146,7 @@ export default function Navbar() {
                     {/* actions btns in desktop */}
                     <div className='hidden md:flex items-center gap-4 border px-8 rounded-full overflow-hidden'>
                         <Image src={menu} alt='menu icon' width={30} className='py-4' onClick={() => setisOpenNav(!isOpenNav)}></Image>
-                        <div className='flex items-center sm:gap-2 lg:gap-4 border-r pr-4 max-lg:hidden'>
+                        <div className='flex items-center sm:gap-2 lg:gap-4 border-r pr-4 max-xl:hidden'>
                             <div className='hover:scale-110 duration-200'>
                                 <Image src={search} alt='search icon' width={30} className='py-4 cursor-pointer'></Image>
                             </div>
