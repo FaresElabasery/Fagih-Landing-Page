@@ -84,7 +84,7 @@ export default function Navbar() {
 
                         <NavigationMenu>
                             <NavigationMenuList>
-                                <NavigationMenuItem className=''>
+                                <NavigationMenuItem>
                                     <NavigationMenuTrigger className="navbarLink flex flex-row-reverse gap-2 hover:bg-transparent! hover:text-text1! text-[clamp(12px,1.5vw,20px)] text-nowrap bg-transparent px-0">
                                         خدماتنا
                                     </NavigationMenuTrigger>
@@ -135,9 +135,9 @@ export default function Navbar() {
                                 </NavigationMenuItem>
                             </NavigationMenuList>
                         </NavigationMenu>
-                        <Link href="#blogs" className="navbarLink text-[clamp(12px,1.5vw,20px)] text-nowrap">المدونة</Link>
-                        <Link href="#jobs" className="navbarLink text-[clamp(12px,1.5vw,20px)] text-nowrap">الوظائف</Link>
-                        <Link href="#contact-us" className="navbarLink text-[clamp(12px,1.5vw,20px)] text-nowrap">تواصل معنا</Link>
+                        <Link href="#news" className="navbarLink text-[clamp(12px,1.5vw,20px)] text-nowrap">المدونة</Link>
+                        <Link href="#partners" className="navbarLink text-[clamp(12px,1.5vw,20px)] text-nowrap">الوظائف</Link>
+                        <Link href="#" className="navbarLink text-[clamp(12px,1.5vw,20px)] text-nowrap">تواصل معنا</Link>
                     </nav>
 
                     {/* actions btns in desktop */}
@@ -188,7 +188,7 @@ export default function Navbar() {
 
                                 <NavigationMenu>
                                     <NavigationMenuList>
-                                        <NavigationMenuItem className=''>
+                                        <NavigationMenuItem>
                                             <NavigationMenuTrigger className="text-md text-gray-400 hover:text-gray-900! font-medium flex gap-2 hover:bg-transparent! bg-transparent">
                                                 خدماتنا
                                             </NavigationMenuTrigger>
@@ -243,8 +243,8 @@ export default function Navbar() {
                                 </NavigationMenu>
 
                                 <Link href="#news" onClick={handleCloseMenu} className="text-md text-gray-400 hover:text-gray-900 font-medium">المدونة</Link>
-                                <Link href="#jobs" onClick={handleCloseMenu} className="text-md text-gray-400 hover:text-gray-900 font-medium">الوظائف</Link>
-                                <Link href="#contact-us" onClick={handleCloseMenu} className="text-md text-gray-400 hover:text-gray-900 font-medium">تواصل معنا</Link>
+                                <Link href="#partners" onClick={handleCloseMenu} className="text-md text-gray-400 hover:text-gray-900 font-medium">الوظائف</Link>
+                                <Link href="#" onClick={handleCloseMenu} className="text-md text-gray-400 hover:text-gray-900 font-medium">تواصل معنا</Link>
 
                             </nav>
                             <SheetFooter>
