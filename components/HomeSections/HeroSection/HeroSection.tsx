@@ -12,7 +12,7 @@ export default function HeroSection() {
                 <div className="flex items-center flex-wrap justify-between lg:h-screen">
                     <div className='flex flex-wrap justify-between mt-30'>
                         <div className="w-full space-y-4 lg:w-2/3">
-                            <Link href='https://youtu.be/dxr8h7ON03I?si=SZPF_Y2SXUpOq3Vi' >
+                            <Link href='https://youtu.be/dxr8h7ON03I?si=SZPF_Y2SXUpOq3Vi' target='_blank' >
                                 <Image src={youtube} alt='youtube icon' className='mb-10 hover:bg-red-600 rounded-full duration-200' />
                             </Link>
                             <h1 className="text-3xl lg:text-[40px] font-bold text-text1" data-aos="fade-right">
