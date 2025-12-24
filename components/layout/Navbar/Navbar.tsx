@@ -88,7 +88,7 @@ export default function Navbar() {
                         <NavigationMenu>
                             <NavigationMenuList>
                                 <NavigationMenuItem>
-                                    <NavigationMenuTrigger className={`navbarLink flex flex-row-reverse gap-2 hover:bg-transparent! hover:text-text1! text-[clamp(12px,1.5vw,20px)] text-nowrap bg-transparent px-0 ${activeSection === "services" ? "active" : ""}`}>
+                                    <NavigationMenuTrigger className={`navbarLink flex flex-row-reverse gap-2 hover:bg-transparent! hover:text-text1! text-[clamp(12px,1.5vw,20px)] text-nowrap bg-transparent px-0 py-6! ${activeSection === "services" ? "active" : ""}`}>
                                         خدماتنا
                                     </NavigationMenuTrigger>
 
@@ -115,7 +115,7 @@ export default function Navbar() {
                         <NavigationMenu>
                             <NavigationMenuList>
                                 <NavigationMenuItem>
-                                    <NavigationMenuTrigger className={`navbarLink flex flex-row-reverse gap-2 hover:bg-transparent! hover:text-text1! text-[clamp(12px,1.5vw,20px)] text-nowrap bg-transparent px-0 ${activeSection === "projects" ? "active" : ""}`}>
+                                    <NavigationMenuTrigger className={`navbarLink flex flex-row-reverse gap-2 hover:bg-transparent! hover:text-text1! text-[clamp(12px,1.5vw,20px)] text-nowrap bg-transparent px-0 py-6! ${activeSection === "projects" ? "active" : ""}`}>
                                         مشاريعنا
                                     </NavigationMenuTrigger>
 
