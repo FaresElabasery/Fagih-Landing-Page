@@ -10,6 +10,8 @@ export default function AOSProvider() {
             duration: 1000,
             easing: "ease-out-cubic",
             offset: 120,
+            once:true,
+            disable:'mobile'
         })
     }, [])
 

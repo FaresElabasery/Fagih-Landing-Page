@@ -62,6 +62,14 @@ export const metadata: Metadata = {
     siteName: "مكتب حسن محمد فقيه",
     locale: "ar_SA",
     type: "website",
+    images: [
+    {
+      url: "/og-image.png",
+      width: 1200,
+      height: 630,
+      alt: "مكتب حسن محمد فقيه للاستشارات الهندسية",
+    },
+  ],
   },
 
 };
