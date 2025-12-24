@@ -1,10 +1,12 @@
-import PrimaryBtn from '@/components/shared/PrimaryBtn/PrimaryBtn'
-import hero1 from '@images/hero1.svg'
-import hero2 from '@images/hero2.svg'
-import youtube from '@images/icons/youtube-hero.svg'
-import Image from 'next/image'
-import Link from 'next/link'
-import styles from './HeroSection.module.css'
+"use client"
+import PrimaryBtn from '@/components/shared/PrimaryBtn/PrimaryBtn';
+import hero1 from '@images/hero1.svg';
+import hero2 from '@images/hero2.svg';
+import youtube from '@images/icons/youtube-hero.svg';
+import Image from 'next/image';
+import Link from 'next/link';
+import CountUp from "react-countup";
+import styles from './HeroSection.module.css';
 export default function HeroSection() {
     return (
         <main id='home' className={`${styles.heroSection} bg-cover bg-center  lg:h-screen h-full pb-4`}>
@@ -28,11 +30,11 @@ export default function HeroSection() {
                             <Image src={hero2} alt=' Building 2' className='mb-10 w-full sm:w-fit bg-cover' />
                         </div>
                     </div>
-                    <div className='flex justify-between w-full sm:w-10/12' data-aos="fade-top">
-                        <h2 className='text-lg sm:text-2xl text-text1'>العملاء</h2>
-                        <h2 className='text-lg sm:text-2xl text-text1'>المشاريع</h2>
-                        <h2 className='text-lg sm:text-2xl text-text1'>الموظفين</h2>
-                        <h2 className='text-lg sm:text-2xl text-text1'>سنوات الخبره</h2>
+                    <div className='flex justify-between w-full sm:w-10/12'>
+                        <h2 className='text-lg sm:text-2xl text-text1'>العملاء <CountUp end={1200} duration={2} />+</h2>
+                        <h2 className='text-lg sm:text-2xl text-text1'>المشاريع <CountUp end={350} duration={2} />+</h2>
+                        <h2 className='text-lg sm:text-2xl text-text1'>الموظفين <CountUp end={150} duration={2} />+</h2>
+                        <h2 className='text-lg sm:text-2xl text-text1'>سنوات الخبره <CountUp end={25} duration={2} />+</h2>
                     </div>
                 </div>
             </div>
