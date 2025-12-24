@@ -16,6 +16,7 @@ import {
     SheetHeader,
     SheetTrigger
 } from "@/components/ui/sheet";
+import { useScrollSpy } from '@/hooks/useScrollSpy';
 import mail from '@images/icons/mail.svg';
 import menu from '@images/icons/menu.svg';
 import search from '@images/icons/search.svg';
@@ -33,6 +34,8 @@ export default function Navbar() {
     const [isOpenNav, setisOpenNav] = useState(false)
     const pathname = usePathname()
     const [isScrolled, setIsScrolled] = useState(false)
+    const activeSection = useScrollSpy()
+
 
     const handleCloseMenu = () => {
         setisOpenNav(false)
@@ -77,7 +80,7 @@ export default function Navbar() {
 
                         <Link
                             href="#who-we-are"
-                            className={`navbarLink text-[clamp(12px,1.5vw,20px)] text-nowrap ${pathname === "#who-we-are" ? "active" : ""}`}
+                            className={`navbarLink text-[clamp(12px,1.5vw,20px)] text-nowrap ${activeSection === "who-we-are" ? "active" : ""}`}
                         >
                             من نحن
                         </Link>
@@ -85,7 +88,7 @@ export default function Navbar() {
                         <NavigationMenu>
                             <NavigationMenuList>
                                 <NavigationMenuItem>
-                                    <NavigationMenuTrigger className="navbarLink flex flex-row-reverse gap-2 hover:bg-transparent! hover:text-text1! text-[clamp(12px,1.5vw,20px)] text-nowrap bg-transparent px-0">
+                                    <NavigationMenuTrigger className={`navbarLink flex flex-row-reverse gap-2 hover:bg-transparent! hover:text-text1! text-[clamp(12px,1.5vw,20px)] text-nowrap bg-transparent px-0 ${activeSection === "services" ? "active" : ""}`}>
                                         خدماتنا
                                     </NavigationMenuTrigger>
 
@@ -112,7 +115,7 @@ export default function Navbar() {
                         <NavigationMenu>
                             <NavigationMenuList>
                                 <NavigationMenuItem>
-                                    <NavigationMenuTrigger className="navbarLink flex flex-row-reverse gap-2 hover:bg-transparent! hover:text-text1! text-[clamp(12px,1.5vw,20px)] text-nowrap bg-transparent px-0">
+                                    <NavigationMenuTrigger className={`navbarLink flex flex-row-reverse gap-2 hover:bg-transparent! hover:text-text1! text-[clamp(12px,1.5vw,20px)] text-nowrap bg-transparent px-0 ${activeSection === "projects" ? "active" : ""}`}>
                                         مشاريعنا
                                     </NavigationMenuTrigger>
 
@@ -135,9 +138,9 @@ export default function Navbar() {
                                 </NavigationMenuItem>
                             </NavigationMenuList>
                         </NavigationMenu>
-                        <Link href="#news" className="navbarLink text-[clamp(12px,1.5vw,20px)] text-nowrap">المدونة</Link>
-                        <Link href="#partners" className="navbarLink text-[clamp(12px,1.5vw,20px)] text-nowrap">الوظائف</Link>
-                        <Link href="#" className="navbarLink text-[clamp(12px,1.5vw,20px)] text-nowrap">تواصل معنا</Link>
+                        <Link href="#news" className={`navbarLink text-[clamp(12px,1.5vw,20px)] text-nowrap ${activeSection === "news" ? "active" : ""}`}>المدونة</Link>
+                        <Link href="#partners" className={`navbarLink text-[clamp(12px,1.5vw,20px)] text-nowrap ${activeSection === "partners" ? "active" : ""}`}>الوظائف</Link>
+                        <Link href="#" className={`navbarLink text-[clamp(12px,1.5vw,20px)] text-nowrap ${activeSection === "contact" ? "active" : ""}`}>تواصل معنا</Link>
                     </nav>
 
                     {/* actions btns in desktop */}

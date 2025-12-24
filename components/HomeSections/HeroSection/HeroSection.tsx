@@ -7,7 +7,7 @@ import Link from 'next/link'
 import styles from './HeroSection.module.css'
 export default function HeroSection() {
     return (
-        <main id='hero' className={`${styles.heroSection} bg-cover bg-center  lg:h-screen h-full pb-4`}>
+        <main id='home' className={`${styles.heroSection} bg-cover bg-center  lg:h-screen h-full pb-4`}>
             <div className="container">
                 <div className="flex items-center flex-wrap justify-between lg:h-screen">
                     <div className='flex flex-wrap justify-between mt-30'>
