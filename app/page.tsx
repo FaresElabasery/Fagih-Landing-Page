@@ -1,5 +1,6 @@
 import AboutUs from "@/components/HomeSections/AboutUs/AboutUs";
 import HeroSection from "@/components/HomeSections/HeroSection/HeroSection";
+import Projects from "@/components/HomeSections/Projects/Projects";
 import Services from "@/components/HomeSections/Services/Services";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <HeroSection />
       <AboutUs />
       <Services />
+      <Projects />
     </div>
   );
 }
