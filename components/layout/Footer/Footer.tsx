@@ -25,10 +25,10 @@ export default function Footer() {
                                 <CircleArrowLeft className='rotate-45 group-hover:rotate-0 duration-200' size={20} />
                             </Link>
                             <div className='flex gap-4 mt-6'>
-                                <Link href={'https://www.facebook.com/fagih.eng'}><Image src={whatsapp} className='size-10 p-2 rounded-full hover:bg-white/20 duration-200' alt='whatsapp icon' /></Link>
-                                <Link href={'https://www.facebook.com/fagih.eng'}><Image src={youtube} className='size-10 p-2 rounded-full hover:bg-white/20 duration-200' alt='youtube icon' /></Link>
-                                <Link href={'https://www.facebook.com/fagih.eng'}><Image src={instagram} className='size-10 p-2 rounded-full hover:bg-white/20 duration-200' alt='instagram icon' /></Link>
-                                <Link href={'https://www.facebook.com/fagih.eng'}><Image src={facebook} className='size-10 p-2 rounded-full hover:bg-white/20 duration-200' alt='facebook icon' /></Link>
+                                <Link href={'https://wa.me/01207286573'}><Image src={whatsapp} className='size-10 p-2 rounded-full hover:bg-white/20 duration-200' alt='whatsapp icon' /></Link>
+                                <Link href={'https://www.youtube.com'}><Image src={youtube} className='size-10 p-2 rounded-full hover:bg-white/20 duration-200' alt='youtube icon' /></Link>
+                                <Link href={'https://www.instagram.com'}><Image src={instagram} className='size-10 p-2 rounded-full hover:bg-white/20 duration-200' alt='instagram icon' /></Link>
+                                <Link href={'https://www.facebook.com'}><Image src={facebook} className='size-10 p-2 rounded-full hover:bg-white/20 duration-200' alt='facebook icon' /></Link>
                             </div>
                         </div>
                     </div>
