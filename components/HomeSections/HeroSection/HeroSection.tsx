@@ -29,10 +29,10 @@ export default function HeroSection() {
                         </div>
                     </div>
                     <div className='flex justify-between w-full sm:w-10/12'>
-                        <h3 className='text-lg sm:text-2xl text-text1'>العملاء</h3>
-                        <h3 className='text-lg sm:text-2xl text-text1'>المشاريع</h3>
-                        <h3 className='text-lg sm:text-2xl text-text1'>الموظفين</h3>
-                        <h3 className='text-lg sm:text-2xl text-text1'>سنوات الخبره</h3>
+                        <h2 className='text-lg sm:text-2xl text-text1'>العملاء</h2>
+                        <h2 className='text-lg sm:text-2xl text-text1'>المشاريع</h2>
+                        <h2 className='text-lg sm:text-2xl text-text1'>الموظفين</h2>
+                        <h2 className='text-lg sm:text-2xl text-text1'>سنوات الخبره</h2>
                     </div>
                 </div>
             </div>
