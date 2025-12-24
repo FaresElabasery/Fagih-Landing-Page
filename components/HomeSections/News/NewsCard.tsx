@@ -11,7 +11,7 @@ type News = {
 
 export default function NewsCard({ news }: { news: News }) {
     return (
-        <div className="grid md:grid-cols-2 gap-8 bg-bg2 rounded-2xl max-md:pt-4">
+        <div className="grid md:grid-cols-2 gap-8 bg-bg2 rounded-2xl max-md:pt-4" >
             <div className="flex flex-col justify-center px-6 md:py-8 lg:py-12 ">
                 <h3 className="text-2xl font-bold mb-2">
                     {news.title}

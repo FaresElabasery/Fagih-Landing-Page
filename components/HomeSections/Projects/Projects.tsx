@@ -42,7 +42,7 @@ export default function Projects() {
             : projects.filter((p) => p.city === activeCity)
 
     return (
-        <section id="projects">
+        <section id="projects" data-aos="fade-up">
             <ProjectsTabs
                 activeCity={activeCity}
                 onChange={setActiveCity}

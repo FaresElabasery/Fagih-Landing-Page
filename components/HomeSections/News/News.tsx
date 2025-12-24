@@ -40,7 +40,7 @@ export default function News() {
     const filtered = activetab === "الاخبار" ? news : events
 
     return (
-        <section id="news" className="container ">
+        <section id="news" className="container " data-aos="fade-up">
             <div className="md:grid md:grid-cols-3 md:items-center md:gap-4">
                 <h2 className="text-xl font-bold text-right ">
                     الاخبار <br />&أنشطتنا وفعالياتنا

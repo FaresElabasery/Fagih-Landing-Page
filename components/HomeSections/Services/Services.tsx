@@ -10,7 +10,7 @@ import service6 from '@images/service6.svg';
 
 export default function Services() {
     return (
-        <section id="services">
+        <section id="services" data-aos="fade-up">
             <div className="container">
                 <div className="flex flex-wrap items-start">
                     <div className="flex flex-col w-full md:w-1/3 md:pe-4 lg:pt-10">

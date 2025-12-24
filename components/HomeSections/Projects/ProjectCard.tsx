@@ -12,7 +12,7 @@ type Project = {
 
 export default function ProjectCard({ project }: { project: Project }) {
     return (
-        <div className="grid md:grid-cols-2 gap-8 bg-bg2 rounded-2xl max-md:pt-4">
+        <div className="grid md:grid-cols-2 gap-8 bg-bg2 rounded-2xl max-md:pt-4" >
             <div className="flex flex-col justify-center px-6 md:py-8 lg:py-12 ">
                 <span className='mb-6'>
                     <Image src={Logo} alt="Project Card Logo" className="w-30 -mr-2" />

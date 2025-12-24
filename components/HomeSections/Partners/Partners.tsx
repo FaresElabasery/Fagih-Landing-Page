@@ -31,7 +31,7 @@ const partners = [
 ]
 export default function Partners() {
     return (
-        <section id="partners" className="mt-20 mb-40">
+        <section id="partners" className="mt-20 mb-40" data-aos="fade-up">
             <div className="flex flex-col items-center">
                 <Badge >
                     شركائنا

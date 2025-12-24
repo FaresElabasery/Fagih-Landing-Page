@@ -1,5 +1,6 @@
 import Footer from "@/components/layout/Footer/Footer";
 import Navbar from "@/components/layout/Navbar/Navbar";
+import AOSProvider from "@/components/Providers/AOSProvider";
 import Schema from "@/components/seo/Schema";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
@@ -74,6 +75,7 @@ export default function RootLayout({
     <html lang="ar" dir="rtl" className={janna.variable}>
       <body>
         <Schema />
+        <AOSProvider />
         <Navbar />
         <div className="bg-bg">
           {children}
