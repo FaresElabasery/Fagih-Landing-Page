@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     title: "مكتب حسن محمد فقيه للاستشارات الهندسية",
     description:
       "حلول هندسية مبتكرة ومستدامة في التصميم المعماري وإدارة المشاريع.",
-    url: "https://www.fagih.com/",
+    url: "https://fagih-landing-page.vercel.app/",
     siteName: "مكتب حسن محمد فقيه",
     locale: "ar_SA",
     type: "website",

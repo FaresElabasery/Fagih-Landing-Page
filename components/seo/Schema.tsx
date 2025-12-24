@@ -7,7 +7,7 @@ export default function Schema() {
                     "@context": "https://schema.org",
                     "@type": "EngineeringOrganization",
                     name: "مكتب حسن محمد فقيه للاستشارات الهندسية",
-                    url: "https://www.fagih.com/",
+                    url: "https://fagih-landing-page.vercel.app/",
                     address: {
                         "@type": "PostalAddress",
                         addressCountry: "SA",
