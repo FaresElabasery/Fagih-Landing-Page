@@ -13,13 +13,13 @@ export default function CarouselControls({ api }: { api: CarouselApi }) {
             <div className="hidden sm:flex items-center w-full border border-text rounded-full overflow-hidden bg-bg">
                 <button
                     onClick={() => api.scrollPrev()}
-                    className="w-18 h-14 border-l border-gray flex items-center justify-center text-text hover:text-text/80 hover:bg-text1 hover:scale-105 transition"
+                    className="w-18 h-14 cursor-pointer border-l border-gray flex items-center justify-center text-text hover:text-text/80 hover:bg-text1 hover:scale-105 transition"
                 >
                     <ArrowRight className="size-5" />
                 </button>
                 <button
                     onClick={() => api.scrollNext()}
-                    className="w-18 h-14 border-r border-gray flex items-center justify-center text-text hover:text-text/80 hover:bg-text1 hover:scale-105 transition"
+                    className="w-18 h-14 cursor-pointer border-r border-gray flex items-center justify-center text-text hover:text-text/80 hover:bg-text1 hover:scale-105 transition"
                 >
                     <ArrowLeft className="size-5" />
                 </button>
