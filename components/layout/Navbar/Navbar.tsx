@@ -12,8 +12,10 @@ import {
     Sheet,
     SheetClose,
     SheetContent,
+    SheetDescription,
     SheetFooter,
     SheetHeader,
+    SheetTitle,
     SheetTrigger
 } from "@/components/ui/sheet";
 import { useScrollSpy } from '@/hooks/useScrollSpy';
@@ -23,6 +25,7 @@ import search from '@images/icons/search.svg';
 import whatsapp from '@images/icons/whatsapp.svg';
 import logoDark from '@images/logo-dark.svg';
 import logo from '@images/logo.svg';
+import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import { Menu } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -55,7 +58,7 @@ export default function Navbar() {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 200)
         }
-        window.addEventListener("scroll",handleScroll)
+        window.addEventListener("scroll", handleScroll)
         return () => window.removeEventListener('scroll', handleScroll)
     }, [])
 
@@ -166,6 +169,12 @@ export default function Navbar() {
                             </Button>
                         </SheetTrigger>
                         <SheetContent side='left'>
+                            <VisuallyHidden>
+                                <SheetTitle>القائمة الرئيسية</SheetTitle>
+                                <SheetDescription>
+                                    روابط التنقل الرئيسية بالموقع
+                                </SheetDescription>
+                            </VisuallyHidden>
                             <SheetHeader>
                                 <Link href={'/'} className='w-full'>
                                     <span className='sr-only'>مكتب حسن محمد فقيه للاستشارات الهندسية </span>
