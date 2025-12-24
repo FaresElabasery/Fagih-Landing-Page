@@ -73,7 +73,7 @@ export default function Navbar() {
 
                         <Link
                             href="/"
-                            className={`navbarLink text-[clamp(12px,1.5vw,20px)] text-nowrap ${pathname === "/" ? "active" : ""}`}
+                            className={`navbarLink text-[clamp(12px,1.5vw,20px)] text-nowrap ${activeSection === "" || activeSection === "hero" ? "active" : ""}`}
                         >
                             الصفحه الرئيسية
                         </Link>
