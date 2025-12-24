@@ -95,7 +95,7 @@ export default function Footer() {
                     <div className='flex flex-col mt-8 sm:mt-0 gap-4 w-full '>
                         <p className='font-semibold text-lg'>اشترك في القائمة البريدية لدينا </p>
                         <div className='flex gap-2 w-full sm:max-w-90 flex-col sm:flex-row relative group '>
-                            <Input type="email" placeholder="البريد الالكتروني" className="w-full  px-4 py-8 rounded-full bg-bg" />
+                            <Input type="email" placeholder="البريد الالكتروني" className="w-full text-text!  px-4 py-8 rounded-full bg-bg" />
                             <span className="absolute cursor-pointer left-2 top-1/2 -translate-y-1/2 sm:w-fit font-semibold  rounded-full text-text1 bg-text px-8 py-2 group-hover:bg-text1 group-hover:text-text hover:text-text1 hover:bg-text duration-200" >
                                 <ArrowLeft size={30} />
                             </span>
