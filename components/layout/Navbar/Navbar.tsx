@@ -38,15 +38,15 @@ export default function Navbar() {
         setisOpenNav(false)
     }
     const servicesLinks = [
-        { title: "التصاميم المعمارية", link: "/services/architecture" },
-        { title: "التخطيط العمراني", link: "/services/urban-planning" },
-        { title: "إدارة المشاريع", link: "/services/project-management" },
+        { title: "التصاميم المعمارية", link: "#services" },
+        { title: "التخطيط العمراني", link: "#services" },
+        { title: "إدارة المشاريع", link: "#services" },
     ]
 
     const projectsLinks = [
-        { title: "أمان جازان", link: "/projects/aman-jazan" },
-        { title: "شاطئ الشقيق", link: "/projects/shoqaiq" },
-        { title: "الكورنيش الجنوبي", link: "/projects/corniche" },
+        { title: "أمان جازان", link: "#projects" },
+        { title: "شاطئ الشقيق", link: "#projects" },
+        { title: "الكورنيش الجنوبي", link: "#projects" },
     ]
     useEffect(() => {
         const handleScroll = () => {
@@ -139,7 +139,6 @@ export default function Navbar() {
                         <Link href="#jobs" className="navbarLink text-[clamp(12px,1.5vw,20px)] text-nowrap">الوظائف</Link>
                         <Link href="#contact-us" className="navbarLink text-[clamp(12px,1.5vw,20px)] text-nowrap">تواصل معنا</Link>
                     </nav>
-
 
                     {/* actions btns in desktop */}
                     <div className='hidden md:flex items-center gap-4 border px-8 rounded-full overflow-hidden'>
@@ -243,7 +242,7 @@ export default function Navbar() {
                                     </NavigationMenuList>
                                 </NavigationMenu>
 
-                                <Link href="#blogs" onClick={handleCloseMenu} className="text-md text-gray-400 hover:text-gray-900 font-medium">المدونة</Link>
+                                <Link href="#news" onClick={handleCloseMenu} className="text-md text-gray-400 hover:text-gray-900 font-medium">المدونة</Link>
                                 <Link href="#jobs" onClick={handleCloseMenu} className="text-md text-gray-400 hover:text-gray-900 font-medium">الوظائف</Link>
                                 <Link href="#contact-us" onClick={handleCloseMenu} className="text-md text-gray-400 hover:text-gray-900 font-medium">تواصل معنا</Link>
 
