@@ -1,7 +1,5 @@
 "use client"
-import { useState } from "react"
 import ProjectCard from "./ProjectCard"
-import ProjectsTabs from "./ProjectTabs"
 
 const projects = [
     {
@@ -35,20 +33,11 @@ const projects = [
 ]
 
 export default function Projects() {
-    const [activeCity, setActiveCity] = useState("جدة")
-
-    const filteredProjects = activeCity === "احدث"
-            ? [projects.sort((a, b) => b.id - a.id)[0]]
-            : projects.filter((p) => p.city === activeCity)
 
     return (
         <section id="projects" data-aos="fade-up">
-            <ProjectsTabs
-                activeCity={activeCity}
-                onChange={setActiveCity}
-            />
-            <div className="container mx-auto mt-6 sm:mt-12 space-y-12">
-                {filteredProjects.map((project) => (
+            <div className="container mx-auto space-y-5">
+                {projects.map((project) => (
                     <ProjectCard key={project.id} project={project} />
                 ))}
             </div>
