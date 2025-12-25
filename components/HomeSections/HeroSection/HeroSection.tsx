@@ -67,7 +67,7 @@ export default function HeroSection() {
                                 </p>
                                 <PrimaryBtn to='who-we-are' title='من نحن' variant={true} />
                             </div>
-                            <div className="w-full flex flex-col items-center justify-end md:flex-row md:py-4 lg:flex-col lg:py-0 lg:w-1/3 " data-aos="fade-left">
+                            <div className="w-full flex flex-col max-sm:justify-end md:flex-row md:py-4 lg:flex-col lg:items-end lg:py-0 lg:w-1/3" data-aos="fade-left">
                                 <Image
                                     src={hero1}
                                     alt="Building 1"
