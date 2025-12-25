@@ -17,23 +17,23 @@ export default function HeroSection() {
     const [activeBg, setActiveBg] = useState(0);
 
     return (
-        <main id="home"  className="relative lg:h-screen h-full overflow-hidden ">
+        <main id="home" className="relative lg:h-screen max-lg:-mt-30  max-lg:pt-30 h-full overflow-hidden m-0 p-0">
             <AnimatePresence mode="sync">
                 <motion.div
                     key={activeBg}
-                    className={`${styles.heroSection} absolute inset-0`}
+                    className={`${styles.heroSection}`}
                     style={{
                         backgroundImage: `url(${heroBackgrounds[activeBg].src})`,
                     }}
-                    initial={{ 
+                    initial={{
                         y: "100%",
                         scale: 1.3
                     }}
-                    animate={{ 
+                    animate={{
                         y: "0%",
                         scale: [1.3, 1.3, 1],
                     }}
-                    exit={{ 
+                    exit={{
                         y: "-100%"
                     }}
                     transition={{
@@ -67,31 +67,30 @@ export default function HeroSection() {
                                 </p>
                                 <PrimaryBtn to='who-we-are' title='من نحن' variant={true} />
                             </div>
-                            <div className="w-full flex flex-col items-end md:flex-row md:py-4 lg:flex-col lg:py-0 lg:w-1/3 " data-aos="fade-left">
+                            <div className="w-full flex flex-col items-center justify-end md:flex-row md:py-4 lg:flex-col lg:py-0 lg:w-1/3 " data-aos="fade-left">
                                 <Image
                                     src={hero1}
                                     alt="Building 1"
                                     onClick={() => setActiveBg(0)}
-                                    className={`mb-10 cursor-pointer transition-all duration-300
+                                    className={`mb-10 cursor-pointer w-full md:w-fit transition-all duration-300
                                 ${activeBg === 0 ? "scale-105 opacity-100" : "opacity-70"}
                             `}
                                 />
-
                                 <Image
                                     src={hero2}
                                     alt="Building 2"
                                     onClick={() => setActiveBg(1)}
-                                    className={`mb-10 cursor-pointer transition-all duration-300
+                                    className={`mb-10 cursor-pointer w-full md:w-fit transition-all duration-300
                                 ${activeBg === 1 ? "scale-105 opacity-100" : "opacity-70"}
                             `}
                                 />
                             </div>
                         </div>
-                        <div className='flex justify-between w-full sm:w-10/12'>
-                            <h2 className='text-lg sm:text-2xl text-text1'>العملاء <CountUp end={1200} duration={2} />+</h2>
-                            <h2 className='text-lg sm:text-2xl text-text1'>المشاريع <CountUp end={350} duration={2} />+</h2>
-                            <h2 className='text-lg sm:text-2xl text-text1'>الموظفين <CountUp end={150} duration={2} />+</h2>
-                            <h2 className='text-lg sm:text-2xl text-text1'>سنوات الخبره <CountUp end={25} duration={2} />+</h2>
+                        <div className='flex justify-between w-full flex-col sm:flex-row text-center gap-6 mx-auto lg:w-10/12'>
+                            <h2 className='text-2xl text-text1'>العملاء <CountUp end={1200} duration={2} />+</h2>
+                            <h2 className='text-2xl text-text1'>المشاريع <CountUp end={350} duration={2} />+</h2>
+                            <h2 className='text-2xl text-text1'>الموظفين <CountUp end={150} duration={2} />+</h2>
+                            <h2 className='text-2xl text-text1'>سنوات الخبره <CountUp end={25} duration={2} />+</h2>
                         </div>
                     </div>
                 </div>
