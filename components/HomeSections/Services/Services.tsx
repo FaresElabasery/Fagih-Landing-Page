@@ -13,7 +13,7 @@ export default function Services() {
         <section id="services" data-aos="fade-up">
             <div className="container">
                 <div className="flex flex-wrap items-start">
-                    <div className="flex flex-col w-full md:w-1/3 md:pe-4 lg:pt-10 sticky top-18">
+                    <div className="flex flex-col w-full md:w-1/3 md:pe-4 lg:pt-10 md:sticky top-18">
                         <Badge >
                             خدماتنا
                         </Badge>
