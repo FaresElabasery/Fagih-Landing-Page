@@ -6,10 +6,11 @@ type PrimaryBtn ={
     title: string,
     to?: string,
     variant?: true,
+    className?: string,
 }
-export default function PrimaryBtn({ title, to = '#', variant }: PrimaryBtn) {
+export default function PrimaryBtn({ title, to = '#', variant , className }: PrimaryBtn) {
     return (
-        <Button size={"lg"} asChild className={`${variant? `primary-btn` : 'secondary-btn'}`}>
+        <Button size={"lg"} asChild className={`${variant? `primary-btn` : 'secondary-btn'} ${className}`}>
             <Link href={`#${to}`}>
                 {title} <ChevronsLeft />
             </Link>
