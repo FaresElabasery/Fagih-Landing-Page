@@ -11,7 +11,7 @@ import Link from 'next/link';
 
 export default function Footer() {
     return (
-        <footer className='bg-text text-text1 pt-12'>
+        <footer id='contact' className='bg-text text-text1 pt-12'>
             <div className="container">
                 <div className='grid  grid-cols-2 lg:grid-cols-4 lg:pe-20'>
                     <div className='flex flex-col gap-4 w-full col-span-2 lg:pe-40'>
