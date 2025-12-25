@@ -29,13 +29,11 @@ import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import { Menu } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
 
 export default function Navbar() {
     const [isOpenNav, setisOpenNav] = useState(false)
-    const pathname = usePathname()
     const [isScrolled, setIsScrolled] = useState(false)
     const activeSection = useScrollSpy()
 
@@ -143,7 +141,7 @@ export default function Navbar() {
                         </NavigationMenu>
                         <Link href="#news" className={`navbarLink text-[clamp(12px,1.5vw,20px)] text-nowrap ${activeSection === "news" ? "active" : ""}`}>المدونة</Link>
                         <Link href="#partners" className={`navbarLink text-[clamp(12px,1.5vw,20px)] text-nowrap ${activeSection === "partners" ? "active" : ""}`}>الوظائف</Link>
-                        <Link href="#" className={`navbarLink text-[clamp(12px,1.5vw,20px)] text-nowrap ${activeSection === "contact" ? "active" : ""}`}>تواصل معنا</Link>
+                        <Link href="#contact" className={`navbarLink text-[clamp(12px,1.5vw,20px)] text-nowrap ${activeSection === "contact" ? "active" : ""}`}>تواصل معنا</Link>
                     </nav>
 
                     {/* actions btns in desktop */}
@@ -256,7 +254,7 @@ export default function Navbar() {
 
                                 <Link href="#news" onClick={handleCloseMenu} className="text-md text-gray-400 hover:text-gray-900 font-medium">المدونة</Link>
                                 <Link href="#partners" onClick={handleCloseMenu} className="text-md text-gray-400 hover:text-gray-900 font-medium">الوظائف</Link>
-                                <Link href="#" onClick={handleCloseMenu} className="text-md text-gray-400 hover:text-gray-900 font-medium">تواصل معنا</Link>
+                                <Link href="#contact" onClick={handleCloseMenu} className="text-md text-gray-400 hover:text-gray-900 font-medium">تواصل معنا</Link>
 
                             </nav>
                             <SheetFooter>

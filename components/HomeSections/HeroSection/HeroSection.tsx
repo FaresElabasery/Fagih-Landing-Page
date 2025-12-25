@@ -17,7 +17,7 @@ export default function HeroSection() {
     const [activeBg, setActiveBg] = useState(0);
 
     return (
-        <main id="home" className="relative lg:h-screen max-lg:-mt-30  max-lg:pt-30 h-full overflow-hidden m-0 p-0">
+        <main id="home" className="relative lg:h-screen max-lg:-mt-30  max-lg:pt-30 h-full max-lg:pb-30 overflow-hidden m-0 p-0">
             <AnimatePresence mode="sync">
                 <motion.div
                     key={activeBg}
@@ -51,7 +51,6 @@ export default function HeroSection() {
                 />
             </AnimatePresence>
             <div className="relative z-10 h-full">
-
                 <div className="container h-full">
                     <div className="flex items-center flex-wrap justify-between lg:h-screen">
                         <div className='flex flex-wrap justify-between mt-30'>
@@ -67,7 +66,7 @@ export default function HeroSection() {
                                 </p>
                                 <PrimaryBtn to='who-we-are' title='من نحن' variant={true} />
                             </div>
-                            <div className="w-full flex flex-col items-center justify-end md:flex-row md:py-4 lg:flex-col lg:py-0 lg:w-1/3 " data-aos="fade-left">
+                            <div className="w-full flex flex-col max-lg:justify-end md:flex-row md:py-4 lg:flex-col lg:items-end lg:py-0 lg:w-1/3" data-aos="fade-left">
                                 <Image
                                     src={hero1}
                                     alt="Building 1"
