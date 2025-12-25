@@ -1,6 +1,21 @@
 .heroSection {
-    background: url('@images/hero-bg.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    width: 120%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: -10%;
+    bottom: 0;
+    filter: brightness(0.8);
+}
+
+.heroSection[data-bg="0"] {
+    background-image: url('@images/hero1.svg');
+}
+
+.heroSection[data-bg="1"] {
+    background-image: url('@images/hero2.svg');
 }
