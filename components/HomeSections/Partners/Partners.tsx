@@ -1,34 +1,47 @@
+import PartnersCard from "@/components/shared/PartnersCard/PartnersCard";
 import { Slider } from "@/components/shared/Slider/Slider";
 import { Badge } from "@/components/ui/badge";
 import { CarouselItem } from "@/components/ui/carousel";
-import Image from "next/image";
 
 const partners = [
     {
         id: 1,
         image: "/images/partner1.svg",
+        description:
+            "جهة استراتيجية تعمل على دعم التنمية الإقليمية وتعزيز المبادرات الاقتصادية المستدامة بما يحقق رؤية المملكة المستقبلية.",
     },
     {
         id: 2,
         image: "/images/partner2.svg",
+        description:
+            "هيئة حكومية مسؤولة عن التخطيط والتطوير الحضري، وتهدف إلى تحسين جودة الحياة وخلق بيئة حضرية متكاملة.",
     },
     {
         id: 3,
         image: "/images/partner3.svg",
+        description:
+            "مكتب استراتيجي يركز على تطوير المناطق ودعم الابتكار والمشاريع التنموية لتحقيق نمو متوازن ومستدام.",
     },
     {
         id: 4,
         image: "/images/partner1.svg",
+        description:
+            "شريك تنموي يساهم في وضع الخطط الاستراتيجية وتنفيذ المبادرات التي تدعم الاقتصاد المحلي.",
     },
     {
         id: 5,
         image: "/images/partner2.svg",
+        description:
+            "جهة داعمة للمشاريع الوطنية الكبرى، تعمل على تمكين القطاعات المختلفة وتحقيق التكامل بين الجهات.",
     },
     {
         id: 6,
         image: "/images/partner3.svg",
+        description:
+            "مؤسسة استراتيجية تهدف إلى تطوير المناطق ورفع كفاءة الأداء المؤسسي بما يتماشى مع مستهدفات التنمية.",
     },
-]
+];
+
 export default function Partners() {
     return (
         <section id="partners" className="mt-20 mb-40" data-aos="fade-up">
@@ -42,11 +55,8 @@ export default function Partners() {
             <div className="container mt-5">
                 <Slider>
                     {partners.map((item, index) => (
-                        <CarouselItem key={item.id} className="basis-full md:basis-1/2 lg:basis-1/3 flex justify-center bg-bg2  h-100 items-center w-full relative ">
-                            {index !== partners.length - 1 && <span className="absolute left-0 h-full w-px bg-text" />}
-                            <div className="px-2">
-                                <Image src={item.image} alt={item.image} width={400} height={50} className="w-full h-20 object-cover" />
-                            </div>
+                        <CarouselItem key={item.id} className="basis-full md:basis-1/2 lg:basis-1/3 pl-0!">
+                            <PartnersCard index={index} partners={partners} item={item} />
                         </CarouselItem>
                     ))}
                 </Slider>
